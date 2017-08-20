@@ -1,0 +1,42 @@
+<%= form_with(model: ventaipad, local: true) do |form| %>
+  <% if ventaipad.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ventaipad.errors.count, "error") %> prohibited this ventaipad from being saved:</h2>
+
+      <ul>
+      <% ventaipad.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :precio %>
+    <%= form.number_field :precio, id: :ventaipad_precio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :modelo %>
+    <%= form.text_field :modelo, id: :ventaipad_modelo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :color %>
+    <%= form.text_field :color, id: :ventaipad_color %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cantidad %>
+    <%= form.number_field :cantidad, id: :ventaipad_cantidad %>
+  </div>
+
+  <div class="field">
+    <%= form.label :memoria %>
+    <%= form.number_field :memoria, id: :ventaipad_memoria %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

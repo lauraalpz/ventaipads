@@ -1,0 +1,208 @@
+<h1>Reporte</h1>
+
+<h2>Reporte de Precio</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Precio</th>
+      <th>Modelo</th>
+      <th>Color</th>
+      <th>Cantidad</th>
+      <th>Memoria</th>
+      <th colspan="3"></th>
+   </tr>
+ </thead>
+  <th>
+
+
+
+     <% @ventaipadsprecio.each do |ventaipad| %>
+     <tr>
+       <td><%= ventaipad.precio %></td>
+
+       <td><%= ventaipad.modelo %></td>
+
+       <td><%= ventaipad.color %></td>
+
+       <td><%= ventaipad.cantidad %></td>
+
+       <td><%= ventaipad.memoria %></td>
+     </tr>
+    <% end %>
+    </th>
+</table>
+
+<% preciomenor = @ventaipadsprecio.first %>
+<% preciomayor = @ventaipadsprecio.last %>
+
+<h3>El precio menor es: <%= preciomenor.precio %> </h3>
+
+<h3>El precio mayor es: <%= preciomayor.precio %> </h3>
+
+
+<h2>Reporte de Modelo</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Precio</th>
+      <th>Modelo</th>
+      <th>Color</th>
+      <th>Cantidad</th>
+      <th>Memoria</th>
+      <th colspan="3"></th>
+   </tr>
+ </thead>
+  <th>
+
+
+
+     <% @ventaipadsmodelo.each do |ventaipad| %>
+     <tr>
+       <td><%= ventaipad.precio %></td>
+
+       <td><%= ventaipad.modelo %></td>
+
+       <td><%= ventaipad.color %></td>
+
+       <td><%= ventaipad.cantidad %></td>
+
+       <td><%= ventaipad.memoria %></td>
+     </tr>
+    <% end %>
+    </th>
+</table>
+
+<% modelomenor = @ventaipadsmodelo.first %>
+<% modelomayor = @ventaipadsmodelo.last %>
+
+<h3>El modelo menor es: <%= modelomenor.modelo %> </h3>
+
+<h3>El modelo mayor es: <%= modelomayor.modelo %> </h3>
+
+
+<h2>Reporte de Color de ipads vendidos</h2>
+<table>
+  <thead>
+    <tr>
+      
+      <th>Color</th>
+      <th>Cantidad</th>
+      
+      <th colspan="3"></th>
+   </tr>
+ </thead>
+  <th>
+
+     <% @ventaipadscolor.each do |ventaipad| %>
+     <tr>
+       
+       <td><%= ventaipad.color %></td>
+       <td><%= ventaipad.cantidad %></td>
+
+     </tr>
+    <% end %>
+    </th>
+</table>
+
+
+
+
+
+
+<h2>Reporte de Cantidad</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Precio</th>
+      <th>Modelo</th>
+      <th>Color</th>
+      <th>Cantidad</th>
+      <th>Memoria</th>
+      <th colspan="3"></th>
+   </tr>
+ </thead>
+  <th>
+
+
+
+     <% @ventaipadscantidad.each do |ventaipad| %>
+     <tr>
+       <td><%= ventaipad.precio %></td>
+
+       <td><%= ventaipad.modelo %></td>
+
+       <td><%= ventaipad.color %></td>
+
+       <td><%= ventaipad.cantidad %></td>
+
+       <td><%= ventaipad.memoria %></td>
+     </tr>
+    <% end %>
+    </th>
+</table>
+
+<% cantidadmenor = @ventaipadscantidad.first %>
+<% cantidadmayor = @ventaipadscantidad.last %>
+
+<h3>La cantidad menor es: <%= cantidadmenor.cantidad %> </h3>
+
+<h3>La cantidad mayor es: <%= cantidadmayor.cantidad %> </h3>
+
+
+<h2>Reporte de Memoria</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Precio</th>
+      <th>Modelo</th>
+      <th>Color</th>
+      <th>Cantidad</th>
+      <th>Memoria</th>
+      <th colspan="3"></th>
+   </tr>
+ </thead>
+  <th>
+
+
+
+     <% @ventaipadsmemoria.each do |ventaipad| %>
+     <tr>
+       <td><%= ventaipad.precio %></td>
+
+       <td><%= ventaipad.modelo %></td>
+
+       <td><%= ventaipad.color %></td>
+
+       <td><%= ventaipad.cantidad %></td>
+
+       <td><%= ventaipad.memoria %></td>
+     </tr>
+    <% end %>
+    </th>
+</table>
+
+<% memoriamenor = @ventaipadsmemoria.first %>
+<% memoriamayor = @ventaipadsmemoria.last %>
+
+<h3>La memoria menor es: <%= memoriamenor.memoria %> </h3>
+
+<h3>La memoria mayor es: <%= memoriamayor.memoria %> </h3>
+
+<%= link_to 'Back' , ventaipads_path %>
+
+
+
+
+
+
+
+  	
+
+
+
+
+
+
+
+
+  

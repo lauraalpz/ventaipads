@@ -1,0 +1,2 @@
+module VentaipadsHelper
+end

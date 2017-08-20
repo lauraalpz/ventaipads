@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Ventaipads</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Precio</th>
+      <th>Modelo</th>
+      <th>Color</th>
+      <th>Cantidad</th>
+      <th>Memoria</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ventaipads.each do |ventaipad| %>
+      <tr>
+        <td><%= ventaipad.precio %></td>
+        <td><%= ventaipad.modelo %></td>
+        <td><%= ventaipad.color %></td>
+        <td><%= ventaipad.cantidad %></td>
+        <td><%= ventaipad.memoria %></td>
+        <td><%= link_to 'Show', ventaipad %></td>
+        <td><%= link_to 'Edit', edit_ventaipad_path(ventaipad) %></td>
+        <td><%= link_to 'Destroy', ventaipad, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ventaipad', new_ventaipad_path %>
+<%= link_to 'Reportes', reporte_index_path %>
+
+

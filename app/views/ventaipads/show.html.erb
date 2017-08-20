@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Precio:</strong>
+  <%= @ventaipad.precio %>
+</p>
+
+<p>
+  <strong>Modelo:</strong>
+  <%= @ventaipad.modelo %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @ventaipad.color %>
+</p>
+
+<p>
+  <strong>Cantidad:</strong>
+  <%= @ventaipad.cantidad %>
+</p>
+
+<p>
+  <strong>Memoria:</strong>
+  <%= @ventaipad.memoria %>
+</p>
+
+<%= link_to 'Edit', edit_ventaipad_path(@ventaipad) %> |
+<%= link_to 'Back', ventaipads_path %>

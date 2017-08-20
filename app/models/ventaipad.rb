@@ -1,0 +1,2 @@
+class Ventaipad < ApplicationRecord
+end
